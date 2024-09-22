@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores amarillas para Nat</title>
+    <style>
+        body {
+            background-color: #1b1b1b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .flower {
+            margin: 20px;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ffeb3b;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .stalk {
+            stroke: #228b22;
+            stroke-width: 4;
+        }
+
+        .leaf {
+            fill: #32cd32;
+        }
+
+        .petal {
+            fill: #ffeb3b;
+        }
+
+        .center {
+            fill: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <svg width="200" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Tallos y hojas -->
+            <line x1="100" y1="200" x2="100" y2="350" class="stalk" />
+            <ellipse cx="80" cy="270" rx="20" ry="10" class="leaf" />
+            <ellipse cx="120" cy="300" rx="20" ry="10" class="leaf" />
+
+            <!-- Pétalos y centro del girasol -->
+            <g transform="translate(100,200)">
+                <circle cx="0" cy="0" r="30" class="center"/>
+                <g id="petals">
+                    <circle r="25" cx="60" cy="0" class="petal" />
+                    <circle r="25" cx="-60" cy="0" class="petal" />
+                    <circle r="25" cx="0" cy="60" class="petal" />
+                    <circle r="25" cx="0" cy="-60" class="petal" />
+                    <circle r="25" cx="42" cy="42" class="petal" />
+                    <circle r="25" cx="-42" cy="-42" class="petal" />
+                    <circle r="25" cx="42" cy="-42" class="petal" />
+                    <circle r="25" cx="-42" cy="42" class="petal" />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="flower">
+        <svg width="200" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Tallos y hojas -->
+            <line x1="100" y1="200" x2="100" y2="350" class="stalk" />
+            <ellipse cx="80" cy="270" rx="20" ry="10" class="leaf" />
+            <ellipse cx="120" cy="300" rx="20" ry="10" class="leaf" />
+
+            <!-- Pétalos y centro del girasol -->
+            <g transform="translate(100,200)">
+                <circle cx="0" cy="0" r="30" class="center"/>
+                <g id="petals">
+                    <circle r="25" cx="60" cy="0" class="petal" />
+                    <circle r="25" cx="-60" cy="0" class="petal" />
+                    <circle r="25" cx="0" cy="60" class="petal" />
+                    <circle r="25" cx="0" cy="-60" class="petal" />
+                    <circle r="25" cx="42" cy="42" class="petal" />
+                    <circle r="25" cx="-42" cy="-42" class="petal" />
+                    <circle r="25" cx="42" cy="-42" class="petal" />
+                    <circle r="25" cx="-42" cy="42" class="petal" />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div id="message">
+        <p>Te amo mucho mi vida</p>
+    </div>
+</body>
+</html>
